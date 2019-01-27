@@ -6,7 +6,9 @@ spring:
   cloud:
     config:
       uri: http://localhost:8888
+
 zuul:
   routes:
-    greendogdelivery:
-    path: /**
+    costumer:
+      path: /**
+      stripPrefix: false
